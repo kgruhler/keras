@@ -930,6 +930,9 @@ class Recurrent(Layer):
     def step(self, inputs, states):
         raise NotImplementedError
 
+    def step_mut(self, inputs, plain_inputs, states):
+        raise NotImplementedError
+
     def get_constants(self, inputs, training=None):
         return []
 
